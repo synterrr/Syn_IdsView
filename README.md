@@ -26,4 +26,4 @@ If you want to contribute with the resource make a Pull Request :)
 ## Credits
 Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
 
-MIT © [SynTer]()
+MIT © [SynTer](https://github.com/synterrr)
