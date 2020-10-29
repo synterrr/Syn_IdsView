@@ -37,7 +37,7 @@ print("FRAMEWORK DETECTED (vRP)")
     end)
 end
 
-if GetResourceState('es_estended') then 
+if GetResourceState('es_extended') then 
     print("FRAMEWORK DETECTED (ESX)")
     RegisterCommand('printids',function(source,args,rawCommand)
         if IsPlayerAceAllowed(source, "view.ids") then
