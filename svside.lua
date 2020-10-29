@@ -50,8 +50,7 @@ if GetResourceState('es_extended') == "started" or GetResourceState('essentialmo
                 elseif string.sub(v, 1, string.len("license:")) == "license:" then
                     license = v
                 elseif string.sub(v, 1, string.len("discord:")) == "discord:" then
-                    discord = v
-                    if vRP.hasPermission(user_id,"YOUR_PERMISSION_HERE") then 
+                    discord = v 
                         if discord == false then 
                             discord = "DISCORD ISN'T OPENED"
                             if steamid == false then 
@@ -59,7 +58,6 @@ if GetResourceState('es_extended') == "started" or GetResourceState('essentialmo
                                 if args[1] then 
                                     TriggerClientEvent('chat:addMessage', {color = { 255, 0, 0},multiline = true,args = {"Me", "Those are the following identifiers of the ID:"..args[1].."\n"..discord.."\n"..steamid.."\n"..license}})
                                 end
-                            end
                         end
                     end
                 end
