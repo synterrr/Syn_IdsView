@@ -8,5 +8,6 @@ author 'SynTer#6969'
 
 server_script {
     '@vrp/lib/utils.lua',
+    'cfg.lua',
     'svside.lua'
 }

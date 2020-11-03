@@ -7,8 +7,7 @@ TriggerClientEvent('chat:addSuggestion', '/printids', 'Command to get user ident
 })
 
 
-if GetResourceState('vrp') == "started" then 
-print("FRAMEWORK DETECTED (vRP)")
+if vRP == true then 
     RegisterCommand('printids',function(source,args,rawCommand)
         local user_id = vRP.getUserId(source)
         local steamid  = false
@@ -37,8 +36,7 @@ print("FRAMEWORK DETECTED (vRP)")
     end)     
 end
 
-if GetResourceState('es_extended') == "started" or GetResourceState('essentialmode') == "started" then 
-    print("FRAMEWORK DETECTED (ESX)")
+if ESX == true then
     RegisterCommand('printids',function(source,args,rawCommand)
         if IsPlayerAceAllowed(source, "view.ids") then
             local steamid  = false
