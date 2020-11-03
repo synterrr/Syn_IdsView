@@ -1,13 +1,12 @@
-local Tunnel = module("vrp","lib/Tunnel")
-local Proxy = module("vrp","lib/Proxy")
-vRP = Proxy.getInterface("vRP")
-
 TriggerClientEvent('chat:addSuggestion', '/printids', 'Command to get user identifers', {
     { name="ID", help="Get UID Identifiers" }
 })
 
 
 if vRP == true then 
+    local Tunnel = module("vrp","lib/Tunnel")
+    local Proxy = module("vrp","lib/Proxy")
+    vRP = Proxy.getInterface("vRP")
     RegisterCommand('printids',function(source,args,rawCommand)
         local user_id = vRP.getUserId(source)
         local steamid  = false
